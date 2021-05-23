@@ -13,7 +13,10 @@ steps:
   inputs:
     versionSpec: "11"
     jdkArchitectureOption: x64
-    jdkSourceOption: 'PreInstalled'
+    jdkSourceOption: LocalDirectory
+    jdkFile: "/home/ansible/java/openjdk-11.0.2_linux-x64_bin.tar.gz"
+    jdkDestinationDirectory: "/home/ansible/java"
+    cleanDestinationDirectory: true
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
