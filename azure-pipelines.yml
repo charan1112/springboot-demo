@@ -30,6 +30,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'dhub'
-    repository: 'charan1112'
+    repository: 'charan1112 / demo-app'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
