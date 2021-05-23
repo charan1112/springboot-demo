@@ -18,6 +18,18 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>mavendemo</id>
+			<url>https://pkgs.dev.azure.com/charanjdevops/demo/_packaging/mavendemo/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,6 +49,18 @@
             <optional>true</optional>
         </dependency> 
 	</dependencies> 
+	<repositories>
+		<repository>
+			<id>mavendemo</id>
+			<url>https://pkgs.dev.azure.com/charanjdevops/demo/_packaging/mavendemo/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>
