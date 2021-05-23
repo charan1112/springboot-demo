@@ -15,7 +15,7 @@ steps:
     jdkArchitectureOption: x64
     jdkSourceOption: LocalDirectory
     jdkFile: "/home/ansible/java/openjdk-11.0.2_linux-x64_bin.tar.gz"
-    jdkDestinationDirectory: "/home/ansible/java"
+    jdkDestinationDirectory: "/home/ansible/openjdk"
     cleanDestinationDirectory: true
 - task: Maven@3
   inputs:
