@@ -6,7 +6,7 @@
 trigger:
 - master
 
-pool: 'ovm'
+pool: 'default'
  
 steps:
 - task: Maven@3
